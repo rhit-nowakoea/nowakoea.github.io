@@ -7,6 +7,7 @@
     --body-color: #7D8A99;
     --heading-color: #3F454D;
     --contrast-color: #20354F;
+    --light-color2: #D8DFEB;
 }
 
 body {
@@ -57,9 +58,22 @@ body {
     }
 }
 
+header {
+    padding-top: 1.25em !important;
+    border: 2px solid var(--heading-color);
+}
+
+header.sticky {
+    position: sticky !important;
+    top: 0 !important;
+    background-color: var(--light-color2) !important;
+    font-size: 20px !important;
+}
+
 body > * {
     padding-left: var(--horizontal-space);
     padding-right: var(--horizontal-space);
+    border: 2px solid var(--heading-color);
 }
 
 body > header {
@@ -90,6 +104,7 @@ header, footer {
 
 header, h1, footer, h2 {
     margin: 0;
+    padding-top: 0.5em;
 }
 
 body#portfolio ul#portfolioItems {
